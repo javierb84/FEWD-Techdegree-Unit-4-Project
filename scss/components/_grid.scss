@@ -1,0 +1,131 @@
+  /* ============================================= */
+  /*              Grid System                      */
+  /* ============================================= */
+
+  .container {
+    padding: 0 10px;
+    @include mediaQuery($brk-narrow) {
+      max-width: 1400px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .centered {
+    @include mediaQuery($brk-narrow) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 10px;
+    @include mediaQuery($brk-narrow) {
+      flex-direction: row;
+    }
+  }
+
+  [class^=col] {
+    margin-top: 10px;
+    flex-basis: 100%;
+    min-height: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    @include mediaQuery($brk-narrow) {
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      align-items: center;
+    }
+    & + & {
+      @include mediaQuery($brk-narrow) {
+        margin-left: 10px;
+      }
+    }
+  }
+
+
+
+  .theme {
+    &.col-1 {
+      background-color: $purple-mountains-majesty;
+      @include mediaQuery($brk-narrow) {
+        flex-basis: 8.33%;
+      }
+    }
+    &.col-2 {
+      background-color: $coral-color;
+      @include mediaQuery($brk-narrow) {
+        flex-basis: 16.67%;
+      }
+    }
+    &.col-3 {
+      background-color: $french-lilac;
+      @include mediaQuery($brk-narrow) {
+        flex-basis: 25.00%;
+      }
+    }
+    &.col-4 {
+      background-color: $anakiwa-color;
+      @include mediaQuery($brk-narrow) {
+        flex-basis: 33.33%;
+      }
+    }
+    &.col-5 {
+      background-color: $vista-blue;
+      @include mediaQuery($brk-narrow) {
+        flex-basis: 41.67%;
+      }
+    }
+    &.col-6 {
+      background-color: $fountain-blue;
+      @include mediaQuery($brk-narrow) {
+        flex-basis: 50.00%;
+      }
+    }
+    &.col-7 {
+      background-color: $sea-pink;
+      @include mediaQuery($brk-narrow) {
+        flex-basis: 58.33%;
+      }
+    }
+    &.col-8 {
+      background-color: $vivid-tangerine;
+      @include mediaQuery($brk-narrow) {
+        flex-basis: 66.67%;
+      }
+    }
+    &.col-9 {
+      background-color: $sunglo-color;
+      @include mediaQuery($brk-narrow) {
+        flex-basis: 75.00%;
+      }
+    }
+    &.col-10 {
+      background-color: $emerald-color;
+      @include mediaQuery($brk-narrow) {
+        flex-basis: 83.33%;
+      }
+    }
+    &.col-11 {
+      background-color: $malibu-color;
+      @include mediaQuery($brk-narrow) {
+        flex-basis: 91.67%;
+      }
+    }
+    &.col-12 {
+      background-color: $riptide-color;
+      @include mediaQuery($brk-narrow) {
+        flex-basis: 100%;
+      }
+    }
+
+  }
+
+  .card {
+    flex-basis: 100%;
+  }

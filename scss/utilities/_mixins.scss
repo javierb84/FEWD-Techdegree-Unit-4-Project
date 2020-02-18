@@ -1,0 +1,5 @@
+@mixin mediaQuery($breakPoint) {
+    @media #{$breakPoint} {
+      @content;
+    }
+  }

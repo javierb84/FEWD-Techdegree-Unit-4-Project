@@ -1,0 +1,35 @@
+  /* ============================================= */
+  /*              Buttons                          */
+  /* ============================================= */
+
+  .btn {
+    margin-top: 15px;
+    width: 100%;
+    color: $white;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 1s;
+    @include mediaQuery($brk-narrow) {
+      padding: 10px 30px;
+    }
+    &:hover {
+      @each $button, $button-color in $button-colors {
+        &.#{$button} {
+          background-color: lighten($button-color, 15%);
+        }
+      }
+    }
+    & + & {
+      @include mediaQuery($brk-narrow) {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  @each $button, $button-color in $button-colors {
+    .#{$button} {
+      background-color: $button-color;
+    }
+  }

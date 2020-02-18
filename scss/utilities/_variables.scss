@@ -1,0 +1,32 @@
+//Descriptive color variables
+
+$white: #fff;
+
+
+$button-colors: (
+    'default': #51ddfc,
+    'success': #63cc82,
+    'error': #e4757a,
+    'warning': #fd7856,
+    'info': #927bc1,
+);
+
+$viking-color: #58e1c1;
+$boulder-color: #777;
+$malibu-color: #51ddfc;
+$sunglo-color: #e4757a;
+$coral-color: #fd7856;
+$emerald-color: #63cc82;
+$purple-mountains-majesty: #927bc1;
+
+$french-lilac: #deb2ee;
+$anakiwa-color: #7ee6fd;
+$vista-blue: #88d9a0;
+$fountain-blue: #4da2bb;
+$sea-pink: #ec9fa3;
+$vivid-tangerine: #fd9f85;
+$riptide-color: #80e8d1;
+$silver-color: #ccc;
+
+//Media query breakpoint
+$brk-narrow: '(min-width: 768px)';
